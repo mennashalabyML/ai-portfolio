@@ -5,24 +5,54 @@
   <title>Menna Shalaby Portfolio</title>
   <style>
     body {
-      background-color: #f0f8ff;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
       color: #333;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin-top: 10px; font-size: 1.2em; }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
       padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #1e90ff;
+
+    h2 { color: #1e90ff; margin-bottom: 15px; }
+
+    .skills ul, .projects ul { list-style: none; padding: 0; }
+    .skills li, .projects li {
+      background: #e6f2ff;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 6px;
     }
-    .section {
-      margin-bottom: 20px;
-    }
+
+    .projects li a { color: #1e90ff; text-decoration: none; font-weight: bold; }
+    .projects li a:hover { text-decoration: underline; }
+
+    footer { text-align: center; margin: 40px 0; }
+    footer a { color: #1e90ff; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>👩‍💻 Menna Shalaby</h1>
-  <p><strong>AI & Machine Learning Student</strong></p>
+  <header>
+    <h1>👩‍💻 Menna Shalaby</h1>
+    <p>AI & Machine Learning Student</p>
+  </header>
 
-  <div class="section">
+  <section class="skills">
     <h2>🧠 Skills</h2>
     <ul>
       <li>C++</li>
@@ -31,17 +61,28 @@
       <li>HTML</li>
       <li>Learning Python</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="projects">
     <h2>🚀 Projects</h2>
-    <p>Coming soon…</p>
-  </div>
+    <ul>
+      <li><a href="#">Project 1: Coming Soon…</a></li>
+      <li><a href="#">Project 2: Coming Soon…</a></li>
+      <li><a href="#">Project 3: Coming Soon…</a></li>
+    </ul>
+  </section>
 
-  <div class="section">
+  <section class="contact">
     <h2>📫 Contact</h2>
     <p>Email: your-email@example.com</p>
-    <p>GitHub: <a href="https://github.com/your-username">GitHub Profile</a></p>
-  </div>
+    <p>
+      <a href="https://github.com/mennashalabyml">GitHub</a> |
+      <a href="#">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Menna Shalaby
+  </footer>
 </body>
 </html>
